@@ -239,6 +239,10 @@
     <Compile Include="Migrations\202107271946514_SeedUsers.Designer.cs">
       <DependentUpon>202107271946514_SeedUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107272222388_AddPhoneToUser.cs" />
+    <Compile Include="Migrations\202107272222388_AddPhoneToUser.Designer.cs">
+      <DependentUpon>202107272222388_AddPhoneToUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -544,6 +548,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107271946514_SeedUsers.resx">
       <DependentUpon>202107271946514_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107272222388_AddPhoneToUser.resx">
+      <DependentUpon>202107272222388_AddPhoneToUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
