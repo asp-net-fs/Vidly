@@ -199,6 +199,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomersController.cs" />
     <Compile Include="Controllers\Api\MoviesController.cs" />
+    <Compile Include="Controllers\Api\NewRentalsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -207,6 +208,7 @@
     <Compile Include="Dtos\GenreDto.cs" />
     <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\MovieDto.cs" />
+    <Compile Include="Dtos\NewRentalDto.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -259,6 +261,14 @@
     <Compile Include="Migrations\202107272222388_AddPhoneToUser.Designer.cs">
       <DependentUpon>202107272222388_AddPhoneToUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107281412105_RentalTable.cs" />
+    <Compile Include="Migrations\202107281412105_RentalTable.Designer.cs">
+      <DependentUpon>202107281412105_RentalTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107281434059_AddNumberAvaibleToMovie.cs" />
+    <Compile Include="Migrations\202107281434059_AddNumberAvaibleToMovie.Designer.cs">
+      <DependentUpon>202107281434059_AddNumberAvaibleToMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -269,6 +279,7 @@
     <Compile Include="Models\MembershipTypesEnum.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -517,6 +528,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\NewRentals\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -567,6 +579,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107272222388_AddPhoneToUser.resx">
       <DependentUpon>202107272222388_AddPhoneToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107281412105_RentalTable.resx">
+      <DependentUpon>202107281412105_RentalTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107281434059_AddNumberAvaibleToMovie.resx">
+      <DependentUpon>202107281434059_AddNumberAvaibleToMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
